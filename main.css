@@ -5,7 +5,12 @@ body{
     color: #333;
     
 }
-a, a:visited{
+a{
+    color: #666;
+    text-decoration: none;
+}
+
+a:visited{
     color: #666;
     text-decoration: none;
 }
@@ -21,10 +26,11 @@ h1 {
     text-align: center;
     font-size: 5em;
 }
+
 h1 a, h1 a:visited, h1 a:active {
     color: black;
     /* text-decoration: none; */
-    pointer-events: none;
+    cursor: default;
 }
 
 nav ul{
@@ -32,12 +38,12 @@ nav ul{
     flex-direction: column;
 
     border: solid #d0d0d0;
-    border-width: 2px 0px;
+    border-width: 2px 0px 1px 0px;
     list-style-type: none;
     align-items: center;
     font-size: x-large;
-    /* font-weight: 600; */
-    text-transform: capitalize;
+    font-family: Lora;
+    text-transform: uppercase;
 }
 ul li{
     margin: .25em 0em;
@@ -45,48 +51,72 @@ ul li{
 
 h2{
     font-size: xx-large;
+    font-family: Lora;
 }
+
 
 .post-date {
     color: black;
+    text-transform: uppercase;
     font-size: xx-large;
+    font-family: Lora;
     border: solid #d0d0d0;
     border-width: 0px 0px 2px 0px;
     text-align: right;
-    margin-top: 2em;
+    padding: 1em .40em 0em 0em;
+
 }
 
 .post-content{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
+}
+.post-content h2, .post-content p{
+    margin: 1em .5em;
+}
+ img{
+    margin: auto auto;
+} 
+
+figure{
+    text-align: center;
 }
 
 
 
 @media only screen and (min-width: 500px) {
+    h1{
+        font-size: 4em;
+    }
     nav ul{
         display: flex;
         flex-direction: row;
         justify-content: right;
-        border: solid #d0d0d0;
-        border-width: 2px 0px;
-        list-style-type: none;
-        flex-flow: nowrap;
-        
-
         font-size: x-large;
-        /* font-weight: 600; */
-        text-transform: capitalize;
+        
     }
     ul li{
         margin: .25em .5em;
     }
 
-    
 
     article{
         display: grid;
         grid-template-columns: 1fr 3fr;
+        grid-gap: 1em;
     }
+
+    .post-date{
+        border: none;
+        
+    }
+    .post-content{
+        border: solid #d0d0d0;
+        border-width: 0px 0px 2px 1px;
+        align-items: right;  
+        
+    }
+    
+    
 }
