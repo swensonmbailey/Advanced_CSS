@@ -48,10 +48,12 @@ function createCard(card) {
   cardElement.classList.add("card");
   const img = new Image();
   img.src = card.src;
+  
   cardElement.appendChild(img);
   const title = document.createElement("h2");
   title.innerText = card.title;
   cardElement.appendChild(title);
+  // cardElement.innerHTML += `<h2>${card.title}</h2>`;
   return cardElement;
 }
 
