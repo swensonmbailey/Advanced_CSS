@@ -1,12 +1,61 @@
-div.alertDiv{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+*{
+    font-family: "Open Sans";
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.bodyText{
+    font-weight: 500;
+}
+
+.alertText{
+    letter-spacing: -1px;
+    font-weight: 100;
+    font-stretch:extra-condensed;
+    margin-left: 3px;
+}
+
+.alertDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.alertContainer{
     display: inline;
-    border-left: 2px darkgray solid;
-
-}
-div.alertDiv > p::before{
-    content: " ";
+    border-right: 2px darkgray solid;
+    display: flex;
+    
 }
 
-p{
-    border-left: 2px darkgray solid;
+.alert{
+    background-color: white;
+    border: 10px red solid;
+    border-radius: 100%;
+    align-self: center;
+
+    font-size: xx-large;
+    
+}
+
+.alertBold{
+    font-weight: 600;
+}
+
+.h2{
+    margin-bottom: -10px;
+    font-weight: 700;
+    font-size: 2.1rem;
+    font-stretch: extra-condensed;
+    line-height: 1em;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+li{
+    list-style-type:disc;
 }
