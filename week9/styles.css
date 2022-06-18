@@ -1,0 +1,12 @@
+div.alertDiv{
+    display: inline;
+    border-left: 2px darkgray solid;
+
+}
+div.alertDiv > p::before{
+    content: " ";
+}
+
+p{
+    border-left: 2px darkgray solid;
+}
